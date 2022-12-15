@@ -31,7 +31,7 @@ describe Team do
     pogba = Player.new({name: "Paul Pogba", position: "midfielder"})
     team.add_player(mbappe)
     team.add_player(pogba)
-    expect(team.players_by_position("midfielder")).to eq([mbappe])
+    expect(team.players_by_position("midfielder")).to eq([pogba])
     expect(team.players_by_position("defender")).to eq([])
   end
 
